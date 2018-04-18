@@ -1,0 +1,15 @@
+#social{
+    background: #fff;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.padd-top-lg{
+    padding-top: 70px;
+}
+.social-icon{
+    max-width:50px;
+}
+hr{
+    border: 1px solid #eeee;
+    margin: 0 auto;
+}

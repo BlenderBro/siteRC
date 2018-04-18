@@ -1,0 +1,25 @@
+#footer{
+    background: #708792;
+    padding: 50px 0;
+    color: #fff;
+}
+
+#footer ul>li{
+    list-style: none;
+    padding: 8px;
+    font-size: 14px;
+}
+.foot-logo{
+    max-width: 40px; 
+}
+#footer p {
+    color:#fff;
+}
+.copy{
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+}
+hr{
+    width: 40%
+}
