@@ -7,6 +7,13 @@ import { AppComponent } from './app.component';
 import { MaterialDesignModule } from './core/material-design.module';
 import { NavbarComponent } from './partials/navbar/navbar.component';
 import { FooterComponent } from './partials/footer/footer.component';
+// firebase crap
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { environment } from '../environments/environment';
+import { AuthService } from './core/auth.service';
+
 
 
 
@@ -16,15 +23,17 @@ import { FooterComponent } from './partials/footer/footer.component';
         AppComponent,
         RoutedComponents,
         NavbarComponent,
-        FooterComponent
-
+        FooterComponent,
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        MaterialDesignModule
+        MaterialDesignModule,
+        AngularFireModule.initializeApp(environment.firebase),
+        AngularFireDatabaseModule,
+        AngularFireAuthModule,
     ],
-    providers: [],
+    providers: [AuthService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
