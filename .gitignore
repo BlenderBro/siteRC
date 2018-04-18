@@ -39,9 +39,8 @@ testem.log
 /e2e/*.js
 /e2e/*.map
 
-#enviroments
-/src/enviroments/*.ts
 
 # System Files
 .DS_Store
 Thumbs.db
+src/environments/environment.ts
