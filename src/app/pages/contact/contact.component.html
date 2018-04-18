@@ -1,3 +1,46 @@
-<p>
-  contact works!
-</p>
+<div class="small-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>contact();</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contact">
+    <div class="container">
+        <div class="row padd-bot">
+            <div class="col-md-6 offset-md-3">
+                <div class="text-center padd-top">
+                    <h1>Get in touch!</h1>
+                    <p>If this is not your thing, you can find us on Twitter</p>
+                </div>
+
+                <form class="contact-form text-center padd-top">
+                    <mat-form-field class="full-width">
+                        <input matInput="text" placeholder="Your Name" value="">
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width">
+                        <input matInput="email" placeholder="Your Email">
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width">
+                        <textarea matInput placeholder="Leave a message" matTextareaAutosize matAutosizeMinRows="2" matAutosizeMaxRows="5"></textarea>
+                    </mat-form-field>
+                </form>
+                <div class="text-center">
+                    <div id="spinner" class="spinner hidden">
+                        <mat-spinner [diameter]="40"></mat-spinner>
+                    </div>
+                    <button id="submit" color="primary" mat-raised-button (click)="spinn()">Trimite</button>
+                    <!-- <div class="alert alert-success">
+                        <p>Sweet! We'll get back to you!</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-social></app-social>

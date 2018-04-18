@@ -14,8 +14,11 @@ import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatStepperModule } from '@angular/material/stepper';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatTooltipModule} from '@angular/material/tooltip';
-import {MatDividerModule} from '@angular/material/divider';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 
 
@@ -37,6 +40,8 @@ import {MatDividerModule} from '@angular/material/divider';
         BrowserAnimationsModule,
         MatTooltipModule,
         MatDividerModule,
+        MatProgressSpinnerModule,
+        MatSnackBarModule,
     ],
     exports: [
         MatToolbarModule,
@@ -53,6 +58,8 @@ import {MatDividerModule} from '@angular/material/divider';
         BrowserAnimationsModule,
         MatTooltipModule,
         MatDividerModule,
+        MatProgressSpinnerModule,
+        MatSnackBarModule,
     ],
     declarations: []
 })

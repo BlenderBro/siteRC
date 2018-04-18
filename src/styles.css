@@ -15,7 +15,29 @@ box-sizing: border-box;
 *::after {
 box-sizing: inherit;
 }
+.alert{
+    padding: 20px 0;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.alert p{
+    color:#fff;
+}
+.alert-info{
+    background: #686de0;
+}
+.alert-success{
+    background: #6ab04c;
+}
+.alert-warn{}
+.alert-danger{}
 /* Helpers */
+.hidden{
+    display: none !important;
+}
+.text-center{
+    text-align: center;
+}
 .padd-top{
     padding-top: 30px;
 }
