@@ -14,3 +14,48 @@ mat-toolbar{
     padding-right: 16px;
     cursor: pointer;
 }
+.mask{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#foo{
+    max-width: 36px;
+    max-height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#foo /deep/ .mat-button-focus-overlay {
+    background-color:transparent;
+}
+
+#profile-pannel{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

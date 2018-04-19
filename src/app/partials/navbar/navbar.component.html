@@ -1,11 +1,6 @@
 <mat-toolbar>
     <mat-toolbar-row>
-        <img routerLink="/" class="logo" src="../../../assets/f_w_logo.png" alt="Fubar Digital">
-        <button mat-button>PROJECT COSTS ESTIMATOR</button>
-
-        <span class="spacer"></span>
-
-        <button mat-icon-button [matMenuTriggerFor]="menu">
+        <button style="margin-right: 30px" mat-icon-button [matMenuTriggerFor]="menu">
             <mat-icon>menu</mat-icon>
         </button>
         <mat-menu #menu="matMenu">
@@ -33,6 +28,35 @@
             <button routerLink='contact' mat-menu-item>
                 <mat-icon>contact_mail</mat-icon>
                 <span>CONTACT</span>
+            </button>
+
+        </mat-menu>
+        <img routerLink="/" class="logo" src="../../../assets/f_w_logo.png" alt="Fubar Digital">
+        <button mat-button>PROJECT COSTS ESTIMATOR</button>
+
+        <span class="spacer"></span>
+        <button *ngIf="!(authService.user | async)" routerLink="lemein" mat-button>LOG IN</button>   
+
+        <button *ngIf="(authService.user | async)" id="foo" mat-button [matMenuTriggerFor]="menuUser">
+            <div class="mask text-center">
+                <img style="height:100%;" src="{{userPhotoURL}}" alt="">
+            </div>         
+        </button>
+        <mat-menu id="profile-pannel" #menuUser="matMenu">
+
+            <button mat-menu-item>
+                <mat-icon>face</mat-icon>
+                <span>PROFILE</span>
+            </button>
+
+            <button mat-menu-item>
+                <mat-icon>text_fields</mat-icon>
+                <span>ADD POST</span>
+            </button>
+
+            <button (click)=logout() mat-menu-item>
+                <mat-icon>lock</mat-icon>
+                <span>LOG OUT</span>
             </button>
 
         </mat-menu>
