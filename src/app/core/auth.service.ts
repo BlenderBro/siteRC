@@ -7,13 +7,15 @@ import { Router } from '@angular/router';
 
 @Injectable()
 export class AuthService {
-    private user: Observable<firebase.User>;
-    private userDetails: firebase.User = null;
+
+    public user: Observable<firebase.User>;
+    userDetails: firebase.User = null;
 
     constructor(private firebaseAuth: AngularFireAuth, private router: Router) {
         this.user = firebaseAuth.authState;
     }
 
+    
     signInWithGoogle() {
         return this.firebaseAuth.auth.signInWithPopup(
             new firebase.auth.GoogleAuthProvider()

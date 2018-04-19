@@ -13,6 +13,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
 import { AuthService } from './core/auth.service';
+import { IsAuthenticatedService } from './core/is-authenticated.service';
 
 
 
@@ -33,7 +34,7 @@ import { AuthService } from './core/auth.service';
         AngularFireDatabaseModule,
         AngularFireAuthModule,
     ],
-    providers: [AuthService],
+    providers: [AuthService, IsAuthenticatedService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
