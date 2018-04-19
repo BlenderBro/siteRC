@@ -13,7 +13,7 @@ import { Observable } from '@firebase/util';
 export class NavbarComponent implements OnInit {
     private userDisplayName: string;
     private userEmail: string;
-    private userPhotoURL: string;
+    public userPhotoURL: string;
 
     constructor(public authService: AuthService) {
     }
