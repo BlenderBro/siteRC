@@ -18,8 +18,7 @@ export class IsAuthenticatedService {
 
         return this.angularFireAuth.authState
             .take(1)
-            .map(user => {
-                console.log(user);    
+            .map(user => {   
                 return !!user
             })
             .do(loggedIn => {
