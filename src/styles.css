@@ -29,8 +29,6 @@ box-sizing: inherit;
 .alert-success{
     background: #6ab04c;
 }
-.alert-warn{}
-.alert-danger{}
 /* Helpers */
 .hidden{
     display: none !important;
@@ -52,12 +50,25 @@ box-sizing: inherit;
     resize: vertical;
     overflow: auto;
 }
-
+.circle{
+    border-radius:50%;
+}
+w-100{
+    max-width: 100px;
+}
+#gray{
+    border-color:#95afc0;
+}
 /* Typography */
-
+a{
+    color:#039be5;
+}
 p{
     color: #3b3b3b;
     color: rgba(0, 0, 0, .87);
+}
+.subtitle{
+    line-height: 25px;
 }
 
 h1, h2, h3 {

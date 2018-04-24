@@ -1,0 +1,22 @@
+.small-hero{
+    background: #30336b;
+    height: 20vh;
+   
+    text-align: center;
+    color: #fff;
+}
+
+.small-hero h3{
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 8vh;
+    color: #fff;
+}
+.card-container{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);    margin: 30px 0;
+}
+
+.card-container .col-md-4{
+    padding-top: 25px;
+}

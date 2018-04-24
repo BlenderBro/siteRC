@@ -32,7 +32,7 @@
 
         </mat-menu>
         <img routerLink="/" class="logo" src="../../../assets/f_w_logo.png" alt="Fubar Digital">
-        <button mat-button>PROJECT COSTS ESTIMATOR</button>
+        <button routerLink="/cost-estimation" mat-button>PROJECT COSTS ESTIMATOR</button>
 
         <span class="spacer"></span>
         <button *ngIf="!(authService.user | async)" routerLink="lemein" mat-button>LOG IN</button>   
@@ -49,7 +49,7 @@
                 <span>PROFILE</span>
             </button>
 
-            <button mat-menu-item>
+            <button mat-menu-item> 
                 <mat-icon>text_fields</mat-icon>
                 <span>ADD POST</span>
             </button>
