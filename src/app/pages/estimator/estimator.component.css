@@ -1,14 +1,21 @@
 .small-hero{
-    background: #30336b;
-    height: 20vh;
-   
+    background: #394EA8;
+    height: 28vh;
+    /* height: 80px; */
     text-align: center;
     color: #fff;
 }
+.white{
+    background:#fff;
+}
 
-.small-hero h3{
+.small-hero h2{
     font-family: 'Roboto Mono', monospace;
     padding-top: 8vh;
+    color: #fff;
+    font-size: 20px;
+}
+.small-hero p{
     color: #fff;
 }
 .card-container{
@@ -17,6 +24,138 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);    margin: 30px 0;
 }
 
-.card-container .col-md-4{
-    padding-top: 25px;
+.col-md-4{
+    padding-bottom: 50px;
 }
+mat-form-field{
+    min-width: 100%;
+}
+form{
+    text-align: center;
+    padding-top: 30px; 
+}
+.col-md-4{
+    justify-content: center;
+    align-items: center;
+}
+.label{
+    color:#9c9c9c;
+}
+/* CUSTOM CHECKBOXES */
+
+input[type=checkbox].css-checkbox{ 
+    display: none;
+}
+.css-label{
+    padding-left: 20px;
+    display: flex;
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    border-radius: 50%;
+    background-image: url(http://placehold.it/150x150);
+    background-repeat: no-repeat;
+    /* background-color: #E9EEF4; */
+    background-size: contain;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+ background-position: 0 0;
+ border: 5px solid #2ecc71;
+}
+
+/* APP SIZE */
+.css-label.small{
+    background-image: url('../../../assets/estimator/small.jpg');
+}
+.css-label.medium{
+    background-image: url('../../../assets/estimator/medium.jpg');
+}
+.css-label.big{
+    background-image: url('../../../assets/estimator/large.jpg');
+}
+
+/* UI/UX DESIGN */
+.css-label.ui-proof{
+    background-image: url('../../../assets/estimator/proof.jpg');
+}
+.css-label.ui-basic{
+    background-image: url('../../../assets/estimator/basic.jpg');
+}
+.css-label.ui-full{
+    background-image: url('../../../assets/estimator/full.jpg');
+}
+
+/* USERS AND ACCOUNTS */
+.css-label.user-up{
+    background-image: url('../../../assets/estimator/singup.jpg');
+}
+.css-label.user-facebook{
+    background-image: url('../../../assets/estimator/fb.png');
+}
+.css-label.user-google{
+    background-image: url('../../../assets/estimator/google-plus.svg');
+}
+.css-label.user-in{
+    background-image: url('../../../assets/estimator/linkedin.svg');
+}
+.css-label.user-tw{
+    background-image: url('../../../assets/estimator/twitter.svg');
+}
+.css-label.user-git{
+    background-image: url('../../../assets/estimator/github.svg');
+}
+.css-label.user-invite{
+    background-image: url('../../../assets/estimator/email.jpg');
+}
+.css-label.user-multi{
+    background-image: url('../../../assets/estimator/multi.jpg');
+}
+
+/* USERS AND CONTENT */
+.css-label.user-dash{
+    background-image: url('../../../assets/estimator/dash.jpg');
+}
+.css-label.user-notifications{
+    background-image: url('../../../assets/estimator/notifs.jpg');
+}
+.css-label.user-file-upload{
+    background-image: url('../../../assets/estimator/upload.jpg');
+}
+.css-label.user-tags{
+    background-image: url('../../../assets/estimator/tags.jpg');
+}
+.css-label.user-ratings{
+    background-image: url('../../../assets/estimator/ratings.jpg');
+}
+.css-label.user-a-v{
+    background-image: url('../../../assets/estimator/a-v.jpg');
+}
+.css-label.user-search{
+    background-image: url('../../../assets/estimator/search.jpg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

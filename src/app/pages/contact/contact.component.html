@@ -16,7 +16,7 @@
                     <p>If this is not your thing, you can find us on Twitter</p>
                 </div>
 
-                <form class="contact-form text-center padd-top">
+                <form [formGroup]="contactForm" class="contact-form text-center padd-top">
                     <mat-form-field class="full-width">
                         <input matInput="text" placeholder="Your Name" value="">
                     </mat-form-field>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 
 @Component({
@@ -8,10 +9,14 @@ import { MatSnackBar } from '@angular/material';
     styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+    contactForm: FormGroup;
 
-    constructor(public alert: MatSnackBar) { }
+    constructor(public alert: MatSnackBar, public _formBuilder: FormBuilder) { }
 
     ngOnInit() {
+        this.contactForm = this._formBuilder.group({
+            firstCtrl: ['', Validators.required]
+        });
     }
 
     spinn() {
