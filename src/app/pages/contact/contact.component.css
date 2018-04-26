@@ -1,15 +1,15 @@
 .small-hero{
     background: #95afc0;
-    height: 20vh;
-   
-    text-align: center;
+    height: 80px;
+    /* text-align: center; */
     color: #fff;
 }
 
 .small-hero h3{
-    font-family: 'Roboto Mono', monospace;
-    padding-top: 8vh;
+    /* font-family: 'Roboto Mono', monospace; */
+    padding-top: 3vh;
     color: #fff;
+    font-weight: 400;
 }
 .contact{
     background: #fff;

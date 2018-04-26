@@ -6,6 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { LoginComponent } from './partials/login/login.component';
 import { EstimatorComponent } from './pages/estimator/estimator.component';
+import { AddPostComponent } from './pages/blog/add-post/add-post.component';
 
 // Services
 import { IsAuthenticatedService } from './core/is-authenticated.service';

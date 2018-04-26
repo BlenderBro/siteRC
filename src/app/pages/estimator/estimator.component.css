@@ -1,19 +1,18 @@
 .small-hero{
-    background: #394EA8;
-    height: 28vh;
-    /* height: 80px; */
-    text-align: center;
+    background: #95afc0;
+    height: 80px;
+    /* text-align: center; */
     color: #fff;
+}
+
+.small-hero h3{
+    /* font-family: 'Roboto Mono', monospace; */
+    padding-top: 3vh;
+    color: #fff;
+    font-weight: 400;
 }
 .white{
     background:#fff;
-}
-
-.small-hero h2{
-    font-family: 'Roboto Mono', monospace;
-    padding-top: 8vh;
-    color: #fff;
-    font-size: 20px;
 }
 .small-hero p{
     color: #fff;

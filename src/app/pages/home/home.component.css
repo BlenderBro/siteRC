@@ -30,12 +30,20 @@ ul>li{
     color: #3b3b3b;
     display: inline-flex;
     vertical-align: middle;
-}
-.links>ul>li:nth-child(2){
     padding-left: 30px;
     padding-right: 30px;
 }
-
+/* .links>ul>li:nth-child(2){
+    padding-left: 30px;
+    padding-right: 30px;
+} */
+#links>a{
+    text-decoration: none;
+    color:#3b3b3b;
+}
+#links>a:hover{
+    color:#039be5;
+}
 #gray{
     background: #ececec;
     padding: 60px 0;
