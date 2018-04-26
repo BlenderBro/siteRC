@@ -1,6 +1,6 @@
 {
-  "name": "mothership",
-  "version": "0.0.0",
+  "name": "FubarDigital-RC1",
+  "version": "0.13.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",

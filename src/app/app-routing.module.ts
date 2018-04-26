@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-import { SocialComponent } from './partials/social/social.component';
-import { IsAuthenticatedService } from './core/is-authenticated.service';
+// Components
+import { SocialComponent } from './partials/social/social.component'
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { LoginComponent } from './partials/login/login.component';
+import { EstimatorComponent } from './pages/estimator/estimator.component';
 
-import { AddPostComponent } from './pages/blog/add-post/add-post.component';
+// Services
+import { IsAuthenticatedService } from './core/is-authenticated.service';
+
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'lemein', component: LoginComponent },
+    { path: 'cost-estimation', component: EstimatorComponent },
     { path: 'add-post', component: AddPostComponent, canActivate: [IsAuthenticatedService] },
 ];
 
@@ -27,6 +30,8 @@ export const RoutedComponents = [
     ContactComponent,
     SocialComponent,
     LoginComponent,
+    EstimatorComponent,
     AddPostComponent,
+
 ]
 

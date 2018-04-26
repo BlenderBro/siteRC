@@ -18,6 +18,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 
 
@@ -42,6 +44,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
         MatDividerModule,
         MatProgressSpinnerModule,
         MatSnackBarModule,
+        ReactiveFormsModule,
+        MatCheckboxModule,
     ],
     exports: [
         MatToolbarModule,
@@ -60,6 +64,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
         MatDividerModule,
         MatProgressSpinnerModule,
         MatSnackBarModule,
+        ReactiveFormsModule,
+        MatCheckboxModule,
     ],
     declarations: []
 })

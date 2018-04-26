@@ -1,0 +1,211 @@
+<div class="small-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Estimator</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="white">
+    <div class="container">
+        <div class="col-md-12 text-center padd-top padd-bot">
+            <h2>We want to hear from You!</h2>
+            <p class="subtitle">Whether you want to work with us, ask a question (we always answer), or just say hello, we'd love to hear from
+                you.
+                <br> If this form is overkill, give us a shout on Twitter instead (
+                <a href="">@some_handle</a>).</p>
+        </div>
+        <div class="col-md-12 padd-top padd-bot">
+            <mat-horizontal-stepper [linear]="isLinear" #stepper="matHorizontalStepper">
+                <mat-step [stepControl]="firstGroup">
+                    <form [formGroup]="firstGroup" id="singleSelect">
+                        <ng-template matStepLabel>Project Size</ng-template>
+                        <div class="row padd-top padd-bot">
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Small">
+                                    <input id="small" type="checkbox" value="1" class="css-checkbox limit">
+                                    <label for="small" class="css-label small"></label>
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Medium">
+                                    <input id="medium" type="checkbox" value="2" class="css-checkbox limit">
+                                    <label for="medium" class="css-label medium"></label>
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Large">
+                                    <input id="big" type="checkbox" value="3" class="css-checkbox limit">
+                                    <label for="big" class="css-label big"></label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="padd-top">
+                            <button mat-raised-button color="primary" matStepperNext>Next</button>
+                        </div>
+                    </form>
+                </mat-step>
+                <mat-step [stepControl]="secondGroup">
+                    <form [formGroup]="secondGroup">
+                        <ng-template matStepLabel>UI/UX Design</ng-template>
+                        <div class="row padd-top padd-bot">
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Proof of Concept">
+                                    <input id="basic-ui" type="checkbox" value="20" class="css-checkbox">
+                                    <label for="basic-ui" class="css-label ui-proof"></label>
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Basic UI/UX">
+                                    <input id="medium-ui" type="checkbox" value="30" class="css-checkbox">
+                                    <label for="medium-ui" class="css-label ui-basic"></label>
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Full UI/UX">
+                                    <input id="full-ui" type="checkbox" value="50" class="css-checkbox">
+                                    <label for="full-ui" class="css-label ui-full"></label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="padd-top">
+                            <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+                            <button mat-raised-button color="primary" matStepperNext>Next</button>
+                        </div>
+                    </form>
+                </mat-step>
+                <mat-step [stepControl]="thirdGroup">
+                    <form [formGroup]="thirdGroup">
+                        <ng-template matStepLabel>Accounts</ng-template>
+                        <div class="row padd-top padd-bot">
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Basic User Signup">
+                                    <input id="basic-user-signup" type="checkbox" value="11" class="css-checkbox">
+                                    <label for="basic-user-signup" class="css-label user-up"></label>
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Signup with Facebook">
+                                    <input id="facebook-signup" type="checkbox" value="12" class="css-checkbox">
+                                    <label for="facebook-signup" class="css-label user-facebook"></label>
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Signup with Google">
+                                    <input id="google-signup" type="checkbox" value="13" class="css-checkbox">
+                                    <label for="google-signup" class="css-label user-google"></label>
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Signup with LinkedIn">
+                                    <input id="ln-signup" type="checkbox" value="14" class="css-checkbox">
+                                    <label for="ln-signup" class="css-label user-in"></label>
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Signup with Twitter">
+                                    <input id="twitter-signup" type="checkbox" value="15" class="css-checkbox">
+                                    <label for="twitter-signup" class="css-label user-tw"></label>
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Signup with GitHub">
+                                    <input id="git-signup" type="checkbox" value="16" class="css-checkbox">
+                                    <label for="git-signup" class="css-label user-git"></label>
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Email Invites">
+                                    <input id="email-invites" type="checkbox" value="17" class="css-checkbox">
+                                    <label for="email-invites" class="css-label user-invite"></label>
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Multi-Tenant Accounts">
+                                    <input id="multi-tenant" type="checkbox" value="18" class="css-checkbox">
+                                    <label for="multi-tenant" class="css-label user-multi"></label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="padd-top">
+                            <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+                            <button mat-raised-button color="primary" matStepperNext>Next</button>
+                        </div>
+                    </form>
+                </mat-step>
+                <mat-step [stepControl]="fourthGroup">
+                    <form [formGroup]="fourthGroup">
+                        <ng-template matStepLabel>Content</ng-template>
+                        <div class="row padd-top padd-bot">
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Dashboard Backend">
+                                    <input id="dashboard" type="checkbox" value="3" class="css-checkbox">
+                                    <label for="dashboard" class="css-label user-dash"></label>
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Feeds and Notifications">
+                                    <input id="notifications" type="checkbox" value="4" class="css-checkbox">
+                                    <label for="notifications" class="css-label user-notifications"></label>
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="File Uploading">
+                                    <input id="file-uploading" type="checkbox" value="5" class="css-checkbox">
+                                    <label for="file-uploading" class="css-label user-file-upload"></label>
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Tags">
+                                    <input id="tags" type="checkbox" value="6" class="css-checkbox">
+                                    <label for="tags" class="css-label user-tags"></label>
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Ratings">
+                                    <input id="ratings" type="checkbox" value="7" class="css-checkbox">
+                                    <label for="ratings" class="css-label user-ratings"></label>
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Audio-Video processing">
+                                    <input id="audio-video" type="checkbox" value="8" class="css-checkbox">
+                                    <label for="audio-video" class="css-label user-a-v"></label>
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                                <span matTooltipPosition='above' matTooltip="Free Text Search">
+                                    <input id="free-search" type="checkbox" value="9" class="css-checkbox">
+                                    <label for="free-search" class="css-label user-search"></label>
+                                </span>
+                            </div>                            
+                        </div>
+                        <div class="padd-top">
+                            <button mat-raised-button color="primary"  matStepperPrevious>Back</button>
+                            <button mat-raised-button color="primary" (click)="totalCost()" matStepperNext>Calculate</button>
+                        </div>
+                    </form>
+                </mat-step>
+                <mat-step>
+                    <ng-template matStepLabel>Estimation</ng-template>
+                    <div class="row">
+                        <div class="col-md-12 padd-top-50 padd-bot text-center">
+                            <h4 class="title">Total Cost:
+                                <span id="total">0</span>€</h4>
+                            <small class="label">Based on Fubar Digial rates.
+                            Please note, this is intended to be a rough estimation of development costs and timescales and exclude all hosting
+                                costs, paid services or purchased assets of any kind. All prices are in EUR and include taxes.</small>
+                        </div>
+                    </div>
+                    <div class="text-center padd-top-50">
+                        <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+                        <button mat-raised-button color="primary" (click)="stepper.reset()">Reset</button>
+                    </div>
+                </mat-step>
+            </mat-horizontal-stepper>
+
+        </div>
+    </div>
+    <app-social></app-social>
+</div>
