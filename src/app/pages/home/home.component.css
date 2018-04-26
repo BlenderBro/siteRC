@@ -35,6 +35,13 @@ ul>li{
     padding-left: 30px;
     padding-right: 30px;
 }
+#links{
+    text-decoration: none;
+    color:#3b3b3b;
+}
+#links:hover{
+    color:#039be5;
+}
 
 #gray{
     background: #ececec;
