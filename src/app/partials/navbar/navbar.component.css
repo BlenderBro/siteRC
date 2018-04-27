@@ -3,12 +3,18 @@
 }
 mat-toolbar{
     position: relative;
-    background-color: #6ab04c;
+    /* background-color: #6ab04c; */
+    background: #3F51B5;
     color: #fff;
     z-index: 999;
     box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
 }
-
+.mat-toolbar-row{
+    height: 56px;
+}
+.mat-toolbar-multiple-rows{
+    min-height: 56px;
+}
 .logo{
     max-width: 35px;
     padding-right: 16px;
