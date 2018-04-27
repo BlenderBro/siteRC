@@ -8,6 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class WorkingWithUsComponent implements OnInit {
 
     pageName = 'Working With Us';
+    step = 0;
+
+    setStep(index: number) {
+        this.step = index;
+    }
+
+    nextStep() {
+        this.step++;
+    }
+
+    prevStep() {
+        this.step--;
+    }
 
     constructor() { }
 
