@@ -12,6 +12,9 @@
     font-weight: 400;
     /* text-transform: uppercase; */
 }
+.full-width{
+    padding-left: 16px;
+}
 h4 fa{
     padding-right: 10px;
 }
