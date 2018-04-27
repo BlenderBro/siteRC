@@ -1,0 +1,21 @@
+.small-hero{
+    background: #3F51B5;
+    height: 110px;
+    /* text-align: center; */
+    color: #fff;
+}
+
+.small-hero h4{
+    /* font-family: 'Roboto Mono', monospace; */
+    padding-top: 4vh;
+    color: #fff;
+    font-weight: 400;
+    /* text-transform: uppercase; */
+}
+h4 fa{
+    padding-right: 10px;
+}
+button{
+    margin-top: 3vh;
+    border-bottom: #fff;
+}

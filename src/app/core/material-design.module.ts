@@ -1,8 +1,8 @@
 // Imports and stores all angular-material UI components
-
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 // Material UI imports
 import { MatToolbarModule, MatButtonModule, MatInputModule } from '@angular/material';
 import { MatIconModule } from '@angular/material/icon';
@@ -20,6 +20,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatChipsModule } from '@angular/material/chips';
 
 
 
@@ -46,6 +47,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
         MatSnackBarModule,
         ReactiveFormsModule,
         MatCheckboxModule,
+        AngularFontAwesomeModule,
+        MatChipsModule,
     ],
     exports: [
         MatToolbarModule,
@@ -66,6 +69,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
         MatSnackBarModule,
         ReactiveFormsModule,
         MatCheckboxModule,
+        AngularFontAwesomeModule,
+        MatChipsModule,
     ],
     declarations: []
 })

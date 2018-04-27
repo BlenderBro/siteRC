@@ -14,11 +14,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
 import { AuthService } from './core/auth.service';
 import { IsAuthenticatedService } from './core/is-authenticated.service';
-
-
-
-
-
+import { DocsHeaderComponent } from './partials/docs-header/docs-header.component';
 
 
 @NgModule({
@@ -27,6 +23,7 @@ import { IsAuthenticatedService } from './core/is-authenticated.service';
         RoutedComponents,
         NavbarComponent,
         FooterComponent,
+        DocsHeaderComponent,
     ],
     imports: [
         BrowserModule,
