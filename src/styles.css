@@ -15,20 +15,23 @@ box-sizing: border-box;
 *::after {
 box-sizing: inherit;
 }
-.alert{
-    padding: 20px 0;
-    margin: 10px 0;
-    border-radius: 5px;
-}
-.alert p{
-    color:#fff;
-}
+
+
+/* Alerts and info boxes */
+
 .alert-info{
-    background: #686de0;
+    background: #e1f5fe;
+    color: #0288d1 !important;
+    padding: 12px 24px 12px 60px;
 }
-.alert-success{
-    background: #6ab04c;
+.alert-info::before{
+    font-family: FontAwesome;
+    content: "\f05a";
+    padding-right: 10px; 
 }
+
+
+
 /* Helpers */
 .hidden{
     display: none !important;
@@ -44,6 +47,9 @@ box-sizing: inherit;
 }
 .padd-bot{
     padding-bottom: 30px;
+}
+.padd-bot-100{
+    padding-bottom: 100px;;
 }
 .vertical{
     height: 100%;
