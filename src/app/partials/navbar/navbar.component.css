@@ -40,6 +40,10 @@ mat-toolbar{
 #profile-pannel{
     margin-top: 20px;
 }
+.example-container {
+    position: absolute;
+  }
+  
 
 
 

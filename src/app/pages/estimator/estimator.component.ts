@@ -47,7 +47,7 @@ export class EstimatorComponent implements OnInit {
         let values = [];
         let all = document.querySelectorAll('input[type="checkbox"]:checked');
         for (let i = 0; i < all.length; i++) {
-            values.push(parseInt(all[i].value));
+            values.push(parseInt(all[i].value);
         }
         //sum it up
         let sum = values.reduce( function(a,b){return a+b;}, 0);
