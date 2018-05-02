@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { AuthService } from '../../core/auth.service';
 import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
 import { Observable } from '@firebase/util';
+import { MatSidenav } from '@angular/material/sidenav';
 
 
 @Component({
@@ -14,6 +15,16 @@ export class NavbarComponent implements OnInit {
     private userDisplayName: string;
     private userEmail: string;
     public userPhotoURL: string;
+
+
+    @ViewChild('sidenav') sidenav: MatSidenav;
+
+    reason = '';
+  
+    close(reason: string) {
+      this.reason = reason;
+      this.sidenav.close();
+    }
 
     constructor(public authService: AuthService) {
     }

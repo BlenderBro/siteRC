@@ -21,6 +21,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatSidenavModule } from '@angular/material/sidenav';
+
+
 
 
 
@@ -49,6 +52,7 @@ import { MatChipsModule } from '@angular/material/chips';
         MatCheckboxModule,
         AngularFontAwesomeModule,
         MatChipsModule,
+        MatSidenavModule,
     ],
     exports: [
         MatToolbarModule,
@@ -71,6 +75,7 @@ import { MatChipsModule } from '@angular/material/chips';
         MatCheckboxModule,
         AngularFontAwesomeModule,
         MatChipsModule,
+        MatSidenavModule,
     ],
     declarations: []
 })
