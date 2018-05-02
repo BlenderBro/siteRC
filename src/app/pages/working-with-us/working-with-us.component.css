@@ -4,6 +4,12 @@
 .white{
     background: #fff;
 }
+.dark-grey{
+    background: #EAEDEF;
+}
+.grey{
+    background: #f6f6f6;
+}
 fa{
     font-size: 30px;
     color: #F54336
@@ -16,6 +22,12 @@ mat-expansion-panel-header{
 }
 .accordion{
     padding-bottom: 100px;
+}
+.circle{
+    cursor: pointer;
+}
+.sect-img{
+    max-width: 100%;
 }
 
 /*--------------

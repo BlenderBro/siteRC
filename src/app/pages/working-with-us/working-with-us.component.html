@@ -1,7 +1,7 @@
 <docs-header [currentPage]="pageName"></docs-header>
 <div class="white">
     <div class="container">
-        <div class="row padd-top">
+        <!-- <div class="row padd-top">
             <div class="col-md-3">
                 <div class="side-nav">
                     <ul class="nav">
@@ -114,7 +114,118 @@
                 </div>
 
             </div>
+        </div> -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <h1>Expect to be involved</h1>
+                    <p>In order to build your ideea for it's target audience in the best, most efficient way, we require all
+                        <br> our clients to be involved with us trough our pre development process</p>
+                </div>
+            </div>
+        </div>
+        <div class="row padd-top-50 padd-bot-100 text-center">
+            <div class="col-md-3">
+                <span matTooltipPosition='below' matTooltip="Information Gathering">
+                    <img (click)=info() class="circle" src="../../../assets/services/info.jpg" alt="Information Gathering">
+                </span>
+            </div>
+            <div class="col-md-3">
+                <span matTooltipPosition='below' matTooltip="Planning">
+                    <img (click)=planning() class="circle" src="../../../assets/services/planning.jpg" alt="Planning">
+                </span>
+            </div>
+            <div class="col-md-3">
+                <span matTooltipPosition='below' matTooltip="Design">
+                    <img (click)=design() class="circle" src="../../../assets/services/design.jpg" alt="Design">
+                </span>
+            </div>
+            <div class="col-md-3">
+                <span matTooltipPosition='below' matTooltip="Tooling & Resoursces">
+                    <img (click)=tooling() class="circle" src="../../../assets/services/tooling.jpg" alt="Tooling">
+                </span>
+            </div>
         </div>
     </div>
+    <div class="grey">
+        <div class="container information">
+            <div class="row padd-top padd-bot min-300">
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <img class="sect-img" src="../../../assets/services/info-section.png" alt="Information Gathering">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="vertical">
+                        <h2>This first step</h2>
+                        <p>is actually the most important one, as it involves a solid understanding of the company it is created
+                            for. It involves a good understanding of
+                            <b>you</b> – what your business goals and dreams are, and how we can help you achieve those goals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dark-grey">
+        <div class="container planning">
+            <div class="row min-300">
+                <div class="col-md-6">
+                    <div class="vertical">
+                        <h2>The end-user</h2>
+                        <p>of the web site or app – aka your customer – must be kept in mind when in the planning phase. These
+                            are, after all, the people who will be learning about your service or buying your product
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <img class="sect-img" src="../../../assets/services/planning-section.png" alt="Information Gathering">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grey">
+        <div class="container design">
+            <div class="row padd-top padd-bot min-300">
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <img class="sect-img" src="../../../assets/services/design-section.png" alt="Information Gathering">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="vertical">
+                        <h2>In this phase</h2>
+                        <p>communication between both you and your designer is crucial to ensure that the final product will
+                            match your needs and taste. It is important that you work closely with your designer, exchanging
+                            ideas, until you arrive at the final design for your web site.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dark-grey marg-bot">
+        <div class="container tooling">
+            <div class="row min-300">
+                <div class="col-md-6">
+                    <div class="vertical">
+                        <h2>The end-user</h2>
+                        <p>of the web site or app – aka your customer – must be kept in mind when in the planning phase. These
+                            are, after all, the people who will be learning about your service or buying your product
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <img class="sect-img" src="../../../assets/services/tooling-section.png" alt="Information Gathering">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <app-social></app-social>
-</div>

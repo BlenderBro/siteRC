@@ -21,6 +21,22 @@ export class WorkingWithUsComponent implements OnInit {
     prevStep() {
         this.step--;
     }
+    info(){
+        let info = document.getElementsByClassName('information');
+        info[0].scrollIntoView({block: 'start',  behavior: 'smooth'});        
+    }
+    planning(){
+        let planning = document.getElementsByClassName('planning');
+        planning[0].scrollIntoView({block: 'start',  behavior: 'smooth'});        
+    }
+    design(){
+        let design = document.getElementsByClassName('design');
+        design[0].scrollIntoView({block: 'start',  behavior: 'smooth'});        
+    }
+    tooling(){
+        let tooling = document.getElementsByClassName('tooling');
+        tooling[0].scrollIntoView({block: 'start',  behavior: 'smooth'});        
+    }
 
     constructor() { }
 
