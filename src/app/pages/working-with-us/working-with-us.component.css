@@ -10,6 +10,12 @@
 .grey{
     background: #f6f6f6;
 }
+#normal{
+    color: #263238;
+}
+.estimator p,h1{
+    color: #FFF;
+}
 fa{
     font-size: 30px;
     color: #F54336
