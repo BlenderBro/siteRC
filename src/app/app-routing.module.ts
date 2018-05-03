@@ -10,6 +10,7 @@ import { AddPostComponent } from './pages/blog/add-post/add-post.component';
 import { WorkingWithUsComponent } from './pages/working-with-us/working-with-us.component';
 import { DevelopmentComponent } from './pages/development/development.component';
 import { MarketingServicesComponent } from './pages/marketing-services/marketing-services.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
 
 // Services
 import { IsAuthenticatedService } from './core/is-authenticated.service';
@@ -18,6 +19,7 @@ import { IsAuthenticatedService } from './core/is-authenticated.service';
 const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'contact', component: ContactComponent },
+    { path: 'about-us', component: AboutUsComponent },
     { path: 'working-with-us', component: WorkingWithUsComponent },
     { path: 'development', component: DevelopmentComponent },
     { path: 'marketing-services', component: MarketingServicesComponent },
@@ -41,7 +43,8 @@ export const RoutedComponents = [
     AddPostComponent,
     WorkingWithUsComponent,
     DevelopmentComponent,
-    MarketingServicesComponent
+    MarketingServicesComponent,
+    AboutUsComponent
 
 ]
 

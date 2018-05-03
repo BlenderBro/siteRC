@@ -17,6 +17,7 @@ import { IsAuthenticatedService } from './core/is-authenticated.service';
 import { DocsHeaderComponent } from './partials/docs-header/docs-header.component';
 
 
+
 @NgModule({
     declarations: [
         AppComponent,
