@@ -10,6 +10,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
     contactForm: FormGroup;
+    pageName:string = 'Contact Us';
 
     constructor(public alert: MatSnackBar, public _formBuilder: FormBuilder) { }
 
