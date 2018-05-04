@@ -1,0 +1,22 @@
+.hero{
+    max-width: 100px;
+}
+.skill{
+    max-width: 200px;
+}
+.cta{
+    padding-top: 20px;
+}
+.dark-grey{
+    background: #EAEDEF;
+}
+mat-card-content{
+    padding-top: 40px;
+}
+mat-card{
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+#social hr{
+    display: none;
+}

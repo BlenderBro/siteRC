@@ -10,6 +10,9 @@
     padding: 8px;
     font-size: 14px;
 }
+#footer ul>li:nth-child(1){
+    border-bottom: 1px solid white;
+}
 .foot-logo{
     max-width: 40px; 
 }
