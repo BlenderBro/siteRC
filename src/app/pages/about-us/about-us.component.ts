@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutUsComponent implements OnInit {
 
-    pageName: string = 'About Us';
+    pageName: string = 'About us';
     goToJobs(){
         alert('Build a jobs page');
     }
