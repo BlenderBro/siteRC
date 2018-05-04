@@ -45,7 +45,7 @@ export class EstimatorComponent implements OnInit {
         */ 
 
         let values = [];
-        let all = document.querySelectorAll('input[type="checkbox"]:checked');
+        let all = (document.querySelectorAll('input[type="checkbox"]:checked')as any as HTMLInputElement[]);
         for (let i = 0; i < all.length; i++) {
             values.push(parseInt(all[i].value));
         }
