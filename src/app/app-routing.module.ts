@@ -11,6 +11,7 @@ import { WorkingWithUsComponent } from './pages/working-with-us/working-with-us.
 import { DevelopmentComponent } from './pages/development/development.component';
 import { MarketingServicesComponent } from './pages/marketing-services/marketing-services.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { ServicesComponent } from './pages/services/services.component';
 import { SinglePostComponent } from './pages/blog/single-post/single-post.component';
 
 // Services
@@ -23,6 +24,7 @@ const routes: Routes = [
     { path: 'about-us', component: AboutUsComponent },
     { path: 'working-with-us', component: WorkingWithUsComponent },
     { path: 'development', component: DevelopmentComponent },
+    { path: 'services', component: ServicesComponent },
     { path: 'marketing-services', component: MarketingServicesComponent },
     { path: 'lemein', component: LoginComponent },
     { path: 'cost-estimation', component: EstimatorComponent },
@@ -48,6 +50,7 @@ export const RoutedComponents = [
     MarketingServicesComponent,
     AboutUsComponent,
     SinglePostComponent,
+    ServicesComponent,
 
 ]
 
