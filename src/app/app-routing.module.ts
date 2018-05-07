@@ -11,6 +11,7 @@ import { WorkingWithUsComponent } from './pages/working-with-us/working-with-us.
 import { DevelopmentComponent } from './pages/development/development.component';
 import { MarketingServicesComponent } from './pages/marketing-services/marketing-services.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { SinglePostComponent } from './pages/blog/single-post/single-post.component';
 
 // Services
 import { IsAuthenticatedService } from './core/is-authenticated.service';
@@ -26,6 +27,7 @@ const routes: Routes = [
     { path: 'lemein', component: LoginComponent },
     { path: 'cost-estimation', component: EstimatorComponent },
     { path: 'add-post', component: AddPostComponent, canActivate: [IsAuthenticatedService] },
+    { path: 'view-post', component: SinglePostComponent },
 ];
 
 @NgModule({
@@ -44,7 +46,8 @@ export const RoutedComponents = [
     WorkingWithUsComponent,
     DevelopmentComponent,
     MarketingServicesComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    SinglePostComponent,
 
 ]
 

@@ -14,6 +14,7 @@ export class EstimatorComponent implements OnInit {
     secondGroup: FormGroup;
     thirdGroup: FormGroup;
     fourthGroup: FormGroup;
+    pageName:string = 'Estimator';
 
     constructor(private _formBuilder: FormBuilder) { }
 
