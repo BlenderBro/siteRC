@@ -19,6 +19,8 @@ export class EstimatorComponent implements OnInit {
     constructor(private _formBuilder: FormBuilder) { }
 
     ngOnInit() {
+        //go to top
+        window.scrollTo(0,0);
         // this.firstGroup = this._formBuilder.group({
         //     firstCtrl: ['', Validators.required]
         // });
