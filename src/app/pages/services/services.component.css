@@ -1,6 +1,19 @@
 .dev-nav{
     padding: 0;
 }
+.full-height{
+    height: 70vh;
+}
+/deep/ .mat-tab-header{
+    background-color:#3f51b5;
+    margin-top: -49px;
+}
+/deep/.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+    background:#fff !important;
+}
+/deep/ .mat-tab-label, .mat-tab-link{
+    color: #fff;
+}
 .white{
     background: #fff;
 }
