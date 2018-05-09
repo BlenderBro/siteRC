@@ -1,3 +1,17 @@
-<p>
-  not-found works!
-</p>
+<docs-header [currentPage]=pageName></docs-header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Page Not Found!</h1>
+            <img id="err" src="../../../../assets/404.png" class="img-fluid" alt="">
+            <h3>Error:
+                <span class="err">404</span>
+            </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-3 text-center padd-top padd-bot-100">
+            <button routerLink="/" mat-raised-button color="primary">Back to Home</button>
+        </div>
+    </div>
+</div>
