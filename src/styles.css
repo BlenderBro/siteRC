@@ -159,6 +159,15 @@ code{
     padding: 3px 4px;
     margin: 0 2px;
 }
+.err{
+    font-family: 'Roboto Mono', monospace;
+    background: #EAEDEF;
+    padding: 3px 4px;
+    margin: 0 2px;
+}
+#err{
+    max-width: 700px;
+}
 
 body{
     margin: 0;
