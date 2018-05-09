@@ -13,6 +13,7 @@ import { MarketingServicesComponent } from './pages/marketing-services/marketing
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { SinglePostComponent } from './pages/blog/single-post/single-post.component';
+import { NotFoundComponent } from './pages/errors/not-found/not-found.component';
 
 // Services
 import { IsAuthenticatedService } from './core/is-authenticated.service';
@@ -30,6 +31,10 @@ const routes: Routes = [
     { path: 'cost-estimation', component: EstimatorComponent },
     { path: 'add-post', component: AddPostComponent, canActivate: [IsAuthenticatedService] },
     { path: 'view-post', component: SinglePostComponent },
+
+    //handle 404 errors
+    { path: '404', component: NotFoundComponent },
+    { path: '**', redirectTo: '/404' },
 ];
 
 @NgModule({
@@ -51,6 +56,7 @@ export const RoutedComponents = [
     AboutUsComponent,
     SinglePostComponent,
     ServicesComponent,
+    NotFoundComponent,
 
 ]
 
