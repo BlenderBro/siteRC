@@ -36,30 +36,9 @@
                 <button routerLink="/cost-estimation" mat-button>COST ESTIMATOR</button>
 
                 <span class="spacer"></span>
-                <button *ngIf="!(authService.user | async)" routerLink="lemein" mat-button>LOG IN</button>
+                <fa name="github"></fa>
 
-                <button *ngIf="(authService.user | async)" id="foo" mat-button [matMenuTriggerFor]="menuUser">
-                    <div class="mask text-center">
-                        <img style="height:100%;" src="{{userPhotoURL}}" alt="">
-                    </div>
-                </button>
-                <mat-menu id="profile-pannel" #menuUser="matMenu">
-
-                    <button mat-menu-item>
-                        <mat-icon>face</mat-icon>
-                        <span>PROFILE</span>
-                    </button>
-
-                    <button routerLink="add-post" mat-menu-item>
-                        <mat-icon>text_fields</mat-icon>
-                        <span>ADD POST</span>
-                    </button>
-
-                    <button (click)=logout() mat-menu-item>
-                        <mat-icon>lock</mat-icon>
-                        <span>LOG OUT</span>
-                    </button>
-
+                <mat-menu id="profile-pannel" #menuUser="matMenu">        
                 </mat-menu>
             </mat-toolbar-row>
         </mat-toolbar>

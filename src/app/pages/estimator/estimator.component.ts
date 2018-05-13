@@ -46,7 +46,7 @@ export class EstimatorComponent implements OnInit {
         *   Sum up values inside resulting array
         *   @return sum:int
         */ 
-
+        window.scrollTo(0,0);
         let values = [];
         let all = (document.querySelectorAll('input[type="checkbox"]:checked')as any as HTMLInputElement[]);
         for (let i = 0; i < all.length; i++) {

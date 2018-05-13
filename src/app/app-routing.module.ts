@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { SocialComponent } from './partials/social/social.component'
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { LoginComponent } from './partials/login/login.component';
+// import { LoginComponent } from './partials/login/login.component';
 import { EstimatorComponent } from './pages/estimator/estimator.component';
 import { AddPostComponent } from './pages/blog/add-post/add-post.component';
 import { WorkingWithUsComponent } from './pages/working-with-us/working-with-us.component';
@@ -27,7 +27,7 @@ const routes: Routes = [
     { path: 'development', component: DevelopmentComponent },
     { path: 'services', component: ServicesComponent },
     { path: 'marketing-services', component: MarketingServicesComponent },
-    { path: 'lemein', component: LoginComponent },
+    // { path: 'lemein', component: LoginComponent },
     { path: 'cost-estimation', component: EstimatorComponent },
     { path: 'add-post', component: AddPostComponent, canActivate: [IsAuthenticatedService] },
     { path: 'view-post', component: SinglePostComponent },
@@ -47,7 +47,7 @@ export const RoutedComponents = [
     HomeComponent,
     ContactComponent,
     SocialComponent,
-    LoginComponent,
+    // LoginComponent,
     EstimatorComponent,
     AddPostComponent,
     WorkingWithUsComponent,
