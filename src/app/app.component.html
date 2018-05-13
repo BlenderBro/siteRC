@@ -1,5 +1,5 @@
-<mat-sidenav-container (backdropClick)="close('backdrop')">
-    <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
+<mat-sidenav-container (backdropClick)="close()">
+    <mat-sidenav #sidenav (keydown.escape)="close()" disableClose>
         <div class="logo-container text-center">
             <img (click)="close()" routerLink='/' src="../assets/f_logo.svg" alt="">
         </div>

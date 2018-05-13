@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import {MatSidenav} from '@angular/material/sidenav';
+import { MatSidenav } from '@angular/material/sidenav';
 import { AuthService } from './core/auth.service';
 import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
@@ -18,9 +18,8 @@ export class AppComponent {
 
     reason = '';
 
-    close(reason: string) {
-      this.reason = reason;
-      this.sidenav.close();
+    close() {
+        this.sidenav.close();
     }
     constructor(public authService: AuthService) {
     }
@@ -44,6 +43,6 @@ export class AppComponent {
     logout() {
         this.authService.logout();
     }
-  
+
 
 }
